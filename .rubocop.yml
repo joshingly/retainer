@@ -1,0 +1,47 @@
+require:
+  - rubocop-rspec
+  - rubocop-rake
+
+AllCops:
+  TargetRubyVersion: 3.2
+  NewCops: enable
+
+Layout/LineLength:
+  Enabled: true
+  Max: 120
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/ModuleFunction:
+  Enabled: true
+  EnforcedStyle: extend_self
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: compact
+
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+
+Style/SignalException:
+  Enabled: true
+  EnforcedStyle: only_raise
+
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: variable

@@ -1,0 +1,7 @@
+*.gem
+/.bundle
+/tmp/
+/pkg/
+/.yardoc/
+/_yardoc/
+/doc/

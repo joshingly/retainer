@@ -1,0 +1,18 @@
+version: '3.9'
+volumes:
+  bundler:
+services:
+  ruby:
+    tty: true
+    stdin_open: true
+    image: retainer-ruby
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      - BUNDLE_CACHE_ALL=false
+      - BUNDLE_PATH=/bundle
+      - BUNDLE_JOBS=4
+    volumes:
+      - .:/app/retainer:delegated
+      - bundler:/bundle
