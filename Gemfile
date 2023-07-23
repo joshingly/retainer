@@ -7,6 +7,8 @@ ruby '3.2.2'
 
 gemspec
 
+gem 'guard'
+gem 'guard-shell'
 gem 'rake'
 gem 'rspec'
 gem 'rubocop'
