@@ -19,9 +19,14 @@ Gem::Specification.new do |spec|
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  excluded = %w[
+    bin/ spec/
+    .git .irbrc .rspec .rubocop.yml
+    docker-compose Dockerfile Gemfile Guardfile
+  ]
   spec.files = Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject do |f|
-      (File.expand_path(f) == __FILE__) || f.start_with?(*%w[bin/ spec/ .git Guardfile docker-compose Dockerfile Gemfile])
+      (File.expand_path(f) == __FILE__) || f.start_with?(*excluded)
     end
   end
   spec.bindir = 'exe'
