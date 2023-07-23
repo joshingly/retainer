@@ -10,7 +10,6 @@ gemspec
 gem 'debug'
 gem 'guard'
 gem 'guard-shell'
-gem 'rake'
 gem 'rspec'
 gem 'rubocop'
 gem 'rubocop-rake'
