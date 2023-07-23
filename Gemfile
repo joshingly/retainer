@@ -7,6 +7,7 @@ ruby '3.2.2'
 
 gemspec
 
+gem 'debug'
 gem 'guard'
 gem 'guard-shell'
 gem 'rake'
