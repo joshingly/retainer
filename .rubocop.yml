@@ -6,13 +6,37 @@ AllCops:
   TargetRubyVersion: 3.2
   NewCops: enable
 
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: variable
+
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
 Layout/LineLength:
   Enabled: true
   Max: 120
 
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: compact
+
 Style/FrozenStringLiteralComment:
   Enabled: true
   EnforcedStyle: always
+
+Style/ModuleFunction:
+  Enabled: true
+  EnforcedStyle: extend_self
+
+Style/SignalException:
+  Enabled: true
+  EnforcedStyle: only_raise
 
 Style/StringLiterals:
   Enabled: true
@@ -21,27 +45,3 @@ Style/StringLiterals:
 Style/StringLiteralsInInterpolation:
   Enabled: true
   EnforcedStyle: single_quotes
-
-Style/ModuleFunction:
-  Enabled: true
-  EnforcedStyle: extend_self
-
-Style/ClassAndModuleChildren:
-  Enabled: true
-  EnforcedStyle: compact
-
-Layout/FirstHashElementIndentation:
-  Enabled: true
-  EnforcedStyle: consistent
-
-Layout/MultilineMethodCallIndentation:
-  Enabled: true
-  EnforcedStyle: indented
-
-Style/SignalException:
-  Enabled: true
-  EnforcedStyle: only_raise
-
-Layout/EndAlignment:
-  Enabled: true
-  EnforcedStyleAlignWith: variable
